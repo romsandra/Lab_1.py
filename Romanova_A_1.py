@@ -75,6 +75,7 @@ with open('books.csv') as csvfile:
      table = list(csv.reader(csvfile, delimiter=';'))
      table.sort(reverse=True, key=criteria)
      table.pop(0)
+     print('Самые популярные 20 книг:')
      for i in range(20):
          print(table[i])
 
