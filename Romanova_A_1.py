@@ -60,7 +60,7 @@ with open('books.csv') as csvfile:
     table = csv.reader(csvfile, delimiter=';')
     for row in list(table)[1:]:
         tags = row[12]
-        tags_list = tags.split('# ')
+        tags_list = tags.split('#')
         for tag in tags_list:
             if tag not in d:
                 d.append(tag)
